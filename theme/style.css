@@ -52,6 +52,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --spacing-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
   --spacing-s: clamp(0.625rem, 0.4076rem + 1.087vw, 1.25rem);
   --spacing-m: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
+  --spacing-xl: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
   --spacing-s-m: clamp(0.625rem, 0.1902rem + 2.1739vw, 1.875rem);
   --spacing-m-l: clamp(0.9375rem, 0.394rem + 2.7174vw, 2.5rem);
 }
@@ -212,6 +213,10 @@ button, input:where([type='button'], [type='reset'], [type='submit']), ::file-se
 }
 [hidden]:where(:not([hidden='until-found'])) {
   display: none !important;
+}
+#page {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700'%3E%3Cdefs%3E%3ClinearGradient gradientTransform='rotate(-58, 0.5, 0.5)' x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='gggrain-gradient2'%3E%3Cstop stop-color='rgba(255, 255, 255, 0.00)' stop-opacity='1' offset='-0%25'%3E%3C/stop%3E%3Cstop stop-color='rgba(255,255,255,0)' stop-opacity='0' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3ClinearGradient gradientTransform='rotate(58, 0.5, 0.5)' x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='gggrain-gradient3'%3E%3Cstop stop-color='rgb(255, 255, 255)' stop-opacity='1'%3E%3C/stop%3E%3Cstop stop-color='rgba(255,255,255,0)' stop-opacity='0' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3Cfilter id='gggrain-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.3' numOctaves='2' seed='2' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeColorMatrix type='saturate' values='0' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='colormatrix'%3E%3C/feColorMatrix%3E%3CfeComponentTransfer x='0%25' y='0%25' width='100%25' height='100%25' in='colormatrix' result='componentTransfer'%3E%3CfeFuncR type='linear' slope='3'%3E%3C/feFuncR%3E%3CfeFuncG type='linear' slope='3'%3E%3C/feFuncG%3E%3CfeFuncB type='linear' slope='3'%3E%3C/feFuncB%3E%3C/feComponentTransfer%3E%3CfeColorMatrix x='0%25' y='0%25' width='100%25' height='100%25' in='componentTransfer' result='colormatrix2' type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 24 -16'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg%3E%3Crect width='100%25' height='100%25' fill='%23ffffff'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' fill='url(%23gggrain-gradient3)'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' fill='url(%23gggrain-gradient2)'%3E%3C/rect%3E%3Crect width='100%25' height='100%25' fill='transparent' filter='url(%23gggrain-filter)' opacity='0.1' style='mix-blend-mode: exclusion'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
 }
 body {
   background-color: var(--color-background);
@@ -1043,6 +1048,9 @@ main:focus {
 }
 .py-s-m {
   padding-block: var(--spacing-s-m);
+}
+.py-xl {
+  padding-block: var(--spacing-xl);
 }
 .pt-s-m {
   padding-top: var(--spacing-s-m);
