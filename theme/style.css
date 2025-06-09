@@ -50,8 +50,10 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --text-step-6: clamp(1.8662rem, 1.0227rem + 4.2179vw, 4.2915rem);
   --text-step-7: clamp(2.2395rem, 1.1526rem + 5.4347vw, 5.3644rem);
   --spacing-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
-  --spacing-xl: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
+  --spacing-s: clamp(0.625rem, 0.4076rem + 1.087vw, 1.25rem);
+  --spacing-m: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
   --spacing-s-m: clamp(0.625rem, 0.1902rem + 2.1739vw, 1.875rem);
+  --spacing-m-l: clamp(0.9375rem, 0.394rem + 2.7174vw, 2.5rem);
 }
 @font-face {
   font-family: content;
@@ -239,11 +241,11 @@ p, li, blockquote:not([class]) {
 }
 blockquote {
   border-inline-start: 0.5rem solid var(--color-primary);
-  padding: var(--space-m-l);
+  padding: var(--spacing-m-l);
   font-size: var(--size-step-2);
 }
 blockquote > * + * {
-  margin-block-start: var(--space-m-l);
+  margin-block-start: var(--spacing-m-l);
 }
 blockquote :last-child {
   font-family: var(--font-base);
@@ -262,7 +264,7 @@ hr {
   border: 0;
   height: 1px;
   width: 10%;
-  margin-block: var(--space-m-l);
+  margin-block: var(--spacing-m-l);
   margin-inline-start: 0;
   background-color: var(--color-bg-accent-2);
 }
@@ -333,6 +335,9 @@ main:focus {
   border-radius: var(--radius-md);
   padding: var(--spacing-xs);
   cursor: pointer;
+}
+.hero .header {
+  max-width: 25ch;
 }
 .nav {
   display: flex;
@@ -472,13 +477,13 @@ main:focus {
 .cluster {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space, var(--space-s));
+  gap: var(--space, var(--spacing-s));
   justify-content: flex-start;
   align-items: center;
 }
 .grid {
   display: grid;
-  grid-gap: var(--space-m);
+  grid-gap: var(--spacing-m);
 }
 @supports (width: min(250px, 100%)) {
   .grid {
@@ -525,12 +530,12 @@ main:focus {
   margin-block: 0;
 }
 .stack > * + * {
-  margin-block-start: var(--space, var(--space-s));
+  margin-block-start: var(--space, var(--spacing-s));
 }
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-m);
+  gap: var(--spacing-m);
 }
 .switcher > * {
   flex-grow: 1;
@@ -566,6 +571,9 @@ main:focus {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+.mx-auto {
+  margin-inline: auto;
 }
 .prose {
   color: var(--tw-prose-body);
@@ -1036,17 +1044,32 @@ main:focus {
 .py-s-m {
   padding-block: var(--spacing-s-m);
 }
-.py-xl {
-  padding-block: var(--spacing-xl);
-}
 .pt-s-m {
   padding-top: var(--spacing-s-m);
+}
+.text-center {
+  text-align: center;
+}
+.font-content {
+  font-family: var(--font-content);
+}
+.font-display {
+  font-family: var(--font-display);
+}
+.text-step-0 {
+  font-size: var(--text-step-0);
 }
 .text-step-2 {
   font-size: var(--text-step-2);
 }
+.text-step-5 {
+  font-size: var(--text-step-5);
+}
 .text-background {
   color: var(--color-background);
+}
+.underline {
+  text-decoration-line: underline;
 }
 .outline-2 {
   outline-style: var(--tw-outline-style);

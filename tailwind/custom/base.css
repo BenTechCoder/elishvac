@@ -63,12 +63,12 @@ blockquote:not([class]) {
 
 blockquote {
 	border-inline-start: 0.5rem solid var(--color-primary);
-	padding: var(--space-m-l);
+	padding: var(--spacing-m-l);
 	font-size: var(--size-step-2);
 }
 
 blockquote > * + * {
-	margin-block-start: var(--space-m-l);
+	margin-block-start: var(--spacing-m-l);
 }
 
 blockquote :last-child {
@@ -91,7 +91,7 @@ hr {
 	border: 0;
 	height: 1px;
 	width: 10%;
-	margin-block: var(--space-m-l);
+	margin-block: var(--spacing-m-l);
 	margin-inline-start: 0;
 	background-color: var(--color-bg-accent-2);
 }
