@@ -341,6 +341,11 @@ main:focus {
   padding: var(--spacing-xs);
   cursor: pointer;
 }
+.divider svg {
+  block-size: auto;
+  width: 100vw;
+  height: auto;
+}
 .hero .header {
   max-width: 25ch;
 }
