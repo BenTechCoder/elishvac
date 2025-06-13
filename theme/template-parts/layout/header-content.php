@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template part for displaying the header content
  *
@@ -8,14 +9,14 @@
  */
 
 ?>
-<header id="masthead" class="bg-primary py-s-m text-background">
+<header id="masthead" class="bg-primary py-s-m text-background mb-xs">
 
 	<div class="wrapper pt-s-m">
 		<div class="nav__inner flex">
-			
-			
-				<p class="text-step-2"><a href="/">_tw_client_starter</a></p>
-			
+
+
+			<p class="text-step-2"><a href="/">_tw_client_starter</a></p>
+
 
 			<burger-menu max-width="600">
 				<nav id="site-navigation"

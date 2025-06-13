@@ -10,7 +10,7 @@
 
 ?>
 
-<section class="hero stack wrapper">
+<section class="hero stack wrapper py-xl">
     <div class="hero-text stack text-center mx-auto">
         <h1 class="eyebrow text-step-0 font-content mx-auto">HVAC Installation and Maintenance in North Carolina</h1>
         <p class="header text-step-5 font-display"><span class="underline"><?php echo strtoupper("FULL-SERVICE"); ?></span> <?php echo strtoupper("HVAC FOR YOUR HOME AND BUSINESS"); ?></p>
