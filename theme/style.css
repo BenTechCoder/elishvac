@@ -56,6 +56,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --spacing-m: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
   --spacing-l: clamp(1.25rem, 0.8152rem + 2.1739vw, 2.5rem);
   --spacing-xl: clamp(1.875rem, 1.2228rem + 3.2609vw, 3.75rem);
+  --spacing-2xl: clamp(2.5rem, 1.6304rem + 4.3478vw, 5rem);
   --spacing-s-m: clamp(0.625rem, 0.1902rem + 2.1739vw, 1.875rem);
   --spacing-m-l: clamp(0.9375rem, 0.394rem + 2.7174vw, 2.5rem);
 }
@@ -485,7 +486,7 @@ main:focus {
 .center {
   box-sizing: content-box;
   margin-inline: auto;
-  max-inline-size: 65ch;
+  max-inline-size: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1033,6 +1034,9 @@ main:focus {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
 .max-w-none {
   max-width: none;
 }
@@ -1062,6 +1066,9 @@ main:focus {
 }
 .bg-primary {
   background-color: var(--color-primary);
+}
+.py-2xl {
+  padding-block: var(--spacing-2xl);
 }
 .py-l {
   padding-block: var(--spacing-l);

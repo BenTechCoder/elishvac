@@ -15,5 +15,7 @@ get_header();
 
 <?php get_template_part("template-parts/components/hero"); ?>
 <?php get_template_part("template-parts/components/services-snippet"); ?>
+<?php get_template_part("template-parts/components/solutions-snippet"); ?>
+<?php get_template_part("template-parts/components/reviews/snippet"); ?>
 
 <?php get_footer(); ?>
