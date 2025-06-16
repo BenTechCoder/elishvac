@@ -483,6 +483,24 @@ main:focus {
   border-color: transparent;
   transform: rotate(180deg);
 }
+.stars {
+  --percent: calc(var(--rating) / 5 * 100%);
+  font-size: var(--text-step--0);
+  display: inline-block;
+  line-height: 1;
+}
+.stars::before {
+  content: "★★★★★";
+  letter-spacing: 3px;
+  background: linear-gradient(	90deg,	var(--color-background) var(--percent),	var(--color-foreground) var(--percent)	);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.reviews-snippet {
+  background-image: var(--reviews-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .center {
   box-sizing: content-box;
   margin-inline: auto;
