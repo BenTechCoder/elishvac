@@ -59,6 +59,7 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --spacing-2xl: clamp(2.5rem, 1.6304rem + 4.3478vw, 5rem);
   --spacing-s-m: clamp(0.625rem, 0.1902rem + 2.1739vw, 1.875rem);
   --spacing-m-l: clamp(0.9375rem, 0.394rem + 2.7174vw, 2.5rem);
+  --spacing-xl-2xl: clamp(1.875rem, 0.788rem + 5.4348vw, 5rem);
 }
 @font-face {
   font-family: content;
@@ -348,6 +349,10 @@ main:focus {
   padding: var(--spacing-xs);
   cursor: pointer;
 }
+.cta-about__img {
+  object-fit: cover;
+  border-radius: 10% 0% 10% 0%;
+}
 .divider svg {
   block-size: auto;
   width: 100vw;
@@ -555,6 +560,20 @@ main:focus {
 }
 .reel.overflowing {
   padding-block-end: 1rem;
+}
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sidebar-space, var(--spacing-l));
+}
+.sidebar > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--sidebar-content, 30%);
+}
+.sidebar > :last-child {
+  flex-grow: 1;
+  flex-basis: var(--sidebar-basis, 0);
 }
 .stack {
   display: flex;
@@ -1058,8 +1077,14 @@ main:focus {
 .max-w-none {
   max-width: none;
 }
+.items-center {
+  align-items: center;
+}
 .justify-center {
   justify-content: center;
+}
+.gap-s {
+  gap: var(--spacing-s);
 }
 .prose .wp-block-table td {
   border: 0;
@@ -1096,6 +1121,9 @@ main:focus {
 }
 .py-xl {
   padding-block: var(--spacing-xl);
+}
+.py-xl-2xl {
+  padding-block: var(--spacing-xl-2xl);
 }
 .pt-s-m {
   padding-top: var(--spacing-s-m);
@@ -1175,6 +1203,16 @@ main:focus {
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-invert-th-borders: oklch(43.9% 0 0);
   --tw-prose-invert-td-borders: oklch(37.1% 0 0);
+}
+@media (width >= 64rem) {
+  .lg\:justify-center {
+    justify-content: center;
+  }
+}
+@media (width >= 64rem) {
+  .lg\:text-center {
+    text-align: center;
+  }
 }
 .prose-a\:text-primary :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   color: var(--color-primary);
