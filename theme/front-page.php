@@ -18,4 +18,5 @@ get_header();
 <?php get_template_part("template-parts/components/solutions-snippet"); ?>
 <?php get_template_part("template-parts/components/reviews/snippet"); ?>
 <?php get_template_part("template-parts/components/cta/cta", "about"); ?>
+<?php get_template_part("template-parts/components/faq/faq", "snippet"); ?>
 <?php get_footer(); ?>

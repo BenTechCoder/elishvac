@@ -9,6 +9,7 @@
  * https://esbuild.github.io/
  */
 
+import "@zachleat/details-utils";
 import BurgerMenu from './components/nav';
 
 if ('customElements' in window) {

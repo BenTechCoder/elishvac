@@ -278,6 +278,7 @@ function deregister_gutenberg_styles()
 	wp_deregister_style('wp-block-library');
 }
 add_action('wp_print_styles', 'deregister_gutenberg_styles', 100);
+
 /**
  * Disable Comments
  */
