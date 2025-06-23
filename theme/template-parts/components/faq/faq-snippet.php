@@ -1,4 +1,4 @@
-<section class="py-xl-2xl wrapper switcher">
+<section class="py-xl-2xl wrapper switcher items-center">
     <div class="stack">
         <h2><?php echo strtoupper("Let's Clear the Air"); ?></h2>
         <div class="flex gap-s">
