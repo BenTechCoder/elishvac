@@ -47,11 +47,13 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --font-content: content, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
 		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --text-step-0: clamp(0.625rem, 0.4511rem + 0.8696vw, 1.125rem);
+  --text-step-1: clamp(0.75rem, 0.5217rem + 1.1413vw, 1.4063rem);
   --text-step-2: clamp(0.9rem, 0.6016rem + 1.4918vw, 1.7578rem);
   --text-step-3: clamp(1.08rem, 0.6914rem + 1.9431vw, 2.1973rem);
   --text-step-4: clamp(1.296rem, 0.7914rem + 2.5228vw, 2.7466rem);
   --text-step-5: clamp(1.5552rem, 0.902rem + 3.2661vw, 3.4332rem);
   --text-step-6: clamp(1.8662rem, 1.0227rem + 4.2179vw, 4.2915rem);
+  --text-step-7: clamp(2.2395rem, 1.1526rem + 5.4347vw, 5.3644rem);
   --spacing-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
   --spacing-s: clamp(0.625rem, 0.4076rem + 1.087vw, 1.25rem);
   --spacing-m: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
@@ -1111,11 +1113,26 @@ main:focus {
 .bg-primary {
   background-color: var(--color-primary);
 }
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
 .py-2xl {
   padding-block: var(--spacing-2xl);
 }
 .py-l {
   padding-block: var(--spacing-l);
+}
+.py-m {
+  padding-block: var(--spacing-m);
+}
+.py-m-l {
+  padding-block: var(--spacing-m-l);
+}
+.py-s {
+  padding-block: var(--spacing-s);
 }
 .py-s-m {
   padding-block: var(--spacing-s-m);
@@ -1141,14 +1158,26 @@ main:focus {
 .text-step-0 {
   font-size: var(--text-step-0);
 }
+.text-step-1 {
+  font-size: var(--text-step-1);
+}
 .text-step-2 {
   font-size: var(--text-step-2);
+}
+.text-step-3 {
+  font-size: var(--text-step-3);
 }
 .text-step-5 {
   font-size: var(--text-step-5);
 }
+.break-words {
+  overflow-wrap: break-word;
+}
 .text-background {
   color: var(--color-background);
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .underline {
   text-decoration-line: underline;
@@ -1208,6 +1237,11 @@ main:focus {
   --tw-prose-invert-th-borders: oklch(43.9% 0 0);
   --tw-prose-invert-td-borders: oklch(37.1% 0 0);
 }
+@media (width >= 48rem) {
+  .md\:text-step-4 {
+    font-size: var(--text-step-4);
+  }
+}
 @media (width >= 64rem) {
   .lg\:justify-center {
     justify-content: center;
@@ -1216,6 +1250,21 @@ main:focus {
 @media (width >= 64rem) {
   .lg\:text-center {
     text-align: center;
+  }
+}
+@media (width >= 64rem) {
+  .lg\:text-step-5 {
+    font-size: var(--text-step-5);
+  }
+}
+@media (width >= 96rem) {
+  .\32 xl\:text-step-6 {
+    font-size: var(--text-step-6);
+  }
+}
+@media (width >= 96rem) {
+  .\32 xl\:text-step-7 {
+    font-size: var(--text-step-7);
   }
 }
 .prose-a\:text-primary :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
