@@ -55,8 +55,8 @@
 	display: block;
 	width: 24px;
 	height: 3px;
-	background: var(--wp--preset--color--background);
-	border: 1px solid var(--wp--preset--color--background);
+	background: var(--wp--preset--color--foreground);
+	border: 1px solid var(--wp--preset--color--foreground);
 	position: absolute;
 	border-radius: 3px;
 	left: 50%;
@@ -103,7 +103,8 @@
 	visibility: hidden;
 	opacity: 0;
 	z-index: 1;
-	background: var(--wp--preset--color--foreground);
+	background: var(--wp--preset--color--tertiary);
+	color: var(--wp--preset--color--background);
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 }
@@ -140,11 +141,15 @@
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
+	background: var(--wp--preset--color--background);
+	border: 1px solid var(--wp--preset--color--background);
 	top: 0;
 	transform: rotate(45deg);
 }
 
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::after {
+	background: var(--wp--preset--color--background);
+	border: 1px solid var(--wp--preset--color--background);
 	top: 0;
 	transform: rotate(-45deg);
 }
