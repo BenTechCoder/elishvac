@@ -53,7 +53,6 @@ Underscores and Varia are distributed under the terms of the GNU GPL v2 or later
   --text-step-4: clamp(1.296rem, 0.7914rem + 2.5228vw, 2.7466rem);
   --text-step-5: clamp(1.5552rem, 0.902rem + 3.2661vw, 3.4332rem);
   --text-step-6: clamp(1.8662rem, 1.0227rem + 4.2179vw, 4.2915rem);
-  --text-step-7: clamp(2.2395rem, 1.1526rem + 5.4347vw, 5.3644rem);
   --spacing-xs: clamp(0.5rem, 0.3478rem + 0.7609vw, 0.9375rem);
   --spacing-s: clamp(0.625rem, 0.4076rem + 1.087vw, 1.25rem);
   --spacing-m: clamp(0.9375rem, 0.6114rem + 1.6304vw, 1.875rem);
@@ -410,8 +409,8 @@ main:focus {
   display: block;
   width: 24px;
   height: 3px;
-  background: var(--wp--preset--color--background);
-  border: 1px solid var(--wp--preset--color--background);
+  background: var(--wp--preset--color--foreground);
+  border: 1px solid var(--wp--preset--color--foreground);
   position: absolute;
   border-radius: 3px;
   left: 50%;
@@ -451,7 +450,8 @@ main:focus {
   visibility: hidden;
   opacity: 0;
   z-index: 1;
-  background: var(--wp--preset--color--foreground);
+  background: var(--wp--preset--color--tertiary);
+  color: var(--wp--preset--color--background);
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -479,10 +479,14 @@ main:focus {
   transition: transform 500ms cubic-bezier(0.17, 0.67, 0, 0.87) 700ms,	opacity 500ms ease 800ms;
 }
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::before {
+  background: var(--wp--preset--color--background);
+  border: 1px solid var(--wp--preset--color--background);
   top: 0;
   transform: rotate(45deg);
 }
 .burger-menu[enabled="true"][status="open"] .burger-menu__bar::after {
+  background: var(--wp--preset--color--background);
+  border: 1px solid var(--wp--preset--color--background);
   top: 0;
   transform: rotate(-45deg);
 }
@@ -628,6 +632,34 @@ main:focus {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+.container {
+  width: 100%;
+}
+@media (width >= 40rem) {
+  .container {
+    max-width: 40rem;
+  }
+}
+@media (width >= 48rem) {
+  .container {
+    max-width: 48rem;
+  }
+}
+@media (width >= 64rem) {
+  .container {
+    max-width: 64rem;
+  }
+}
+@media (width >= 80rem) {
+  .container {
+    max-width: 80rem;
+  }
+}
+@media (width >= 96rem) {
+  .container {
+    max-width: 96rem;
+  }
 }
 .mx-auto {
   margin-inline: auto;
@@ -1080,6 +1112,9 @@ main:focus {
 .max-w-none {
   max-width: none;
 }
+.content-center {
+  align-content: center;
+}
 .items-center {
   align-items: center;
 }
@@ -1109,9 +1144,6 @@ main:focus {
 }
 .bg-foreground {
   background-color: var(--color-foreground);
-}
-.bg-primary {
-  background-color: var(--color-primary);
 }
 .bg-secondary {
   background-color: var(--color-secondary);
@@ -1161,9 +1193,6 @@ main:focus {
 .text-step-1 {
   font-size: var(--text-step-1);
 }
-.text-step-2 {
-  font-size: var(--text-step-2);
-}
 .text-step-3 {
   font-size: var(--text-step-3);
 }
@@ -1175,6 +1204,9 @@ main:focus {
 }
 .text-background {
   color: var(--color-background);
+}
+.text-foreground {
+  color: var(--color-foreground);
 }
 .uppercase {
   text-transform: uppercase;
@@ -1260,11 +1292,6 @@ main:focus {
 @media (width >= 96rem) {
   .\32 xl\:text-step-6 {
     font-size: var(--text-step-6);
-  }
-}
-@media (width >= 96rem) {
-  .\32 xl\:text-step-7 {
-    font-size: var(--text-step-7);
   }
 }
 .prose-a\:text-primary :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
