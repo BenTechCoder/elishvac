@@ -293,3 +293,8 @@ add_action('admin_menu', 'df_disable_comments_admin_menu');
 add_action('admin_init', 'df_disable_comments_admin_menu_redirect');
 add_action('admin_init', 'df_disable_comments_dashboard');
 add_action('init', 'df_disable_comments_admin_bar');
+add_theme_support('custom-logo');
+
+// Custom Nav Walker
+
+require get_template_directory() . '/inc/details-walker.php';
