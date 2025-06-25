@@ -46,7 +46,7 @@
 </footer><!-- #colophon -->
 <div class="py-s bg-tertiary text-background">
 	<div class="wrapper stack center">
-		<p>®<?php echo date('Y'); ?> Eli's Heating and Air</p>
+		<p>®<?php echo date('Y'); ?> <?php echo get_option('business_details_legal_name'); ?></p>
 		<p>Built By <a href="https://www.lebronconsulting.tech/">Lebron Consulting</a></p>
 	</div>
 </div>
