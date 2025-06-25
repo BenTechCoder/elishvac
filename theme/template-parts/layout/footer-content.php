@@ -40,18 +40,7 @@
 					}
 					?>
 				</ul>
-
-
 			</div>
-			<?php
-			// wp_nav_menu(
-			// 	array(
-			// 		'theme_location' => 'footer_menu',
-			// 		'menu_class'     => 'footer-menu',
-			// 		'depth'          => 1,
-			// 	)
-			// );
-			?>
 		</nav>
 	<?php endif; ?>
 </footer><!-- #colophon -->
