@@ -10,10 +10,10 @@
 
 ?>
 
-<footer id="colophon" class="wrapper py-xl-2xl">
+<footer id="colophon">
 
 	<?php if (has_nav_menu('menu-2')) : ?>
-		<nav aria-label="<?php esc_attr_e('Footer Menu', '_tw'); ?>" class="switcher">
+		<nav aria-label="<?php esc_attr_e('Footer Menu', '_tw'); ?>" class="wrapper switcher py-xl-2xl">
 			<div>
 				<?php the_custom_logo(); ?>
 			</div>
@@ -43,10 +43,10 @@
 			</div>
 		</nav>
 	<?php endif; ?>
-</footer><!-- #colophon -->
-<div class="py-s bg-tertiary text-background">
-	<div class="wrapper stack center">
+	<div class="py-s bg-tertiary text-background">
+	<div class="wrapper stack text-center">
 		<p>®<?php echo date('Y'); ?> <?php echo get_option('business_details_legal_name'); ?></p>
 		<p>Built By <a href="https://www.lebronconsulting.tech/">Lebron Consulting</a></p>
 	</div>
 </div>
+</footer><!-- #colophon -->
