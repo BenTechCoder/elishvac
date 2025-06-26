@@ -44,7 +44,7 @@ get_template_part("template-parts/components/hero", null, array(
     </section>
 </div>
 <?php get_template_part("template-parts/components/reviews/snippet"); ?>
-<?php get_template_part("template-parts/components/contact-banners"); ?>
+
 
 <?php
 get_footer();

@@ -10,7 +10,7 @@
  */
 
 ?>
-
+<?php get_template_part("template-parts/components/contact-banners"); ?>
 </main><!-- #content -->
 
 	<?php get_template_part( 'template-parts/layout/footer', 'content' ); ?>
