@@ -34,5 +34,5 @@ if ($args) {
         <a href="https://www.lebronconsulting.tech" class="btn bg-foreground text-background">Lebron Consulting</a>
     </div>
 </section>
-<?php //get_template_part("template-parts/components/hero-divider"); 
+<?php get_template_part("template-parts/components/hero-divider"); 
 ?>

@@ -42,7 +42,7 @@
 }
 
 .nav a:hover {
-	color: var(--wp--preset--color--tertiary);
+	color: var(--wp--preset--color--secondary);
 }
 
 .burger-menu__trigger {
@@ -87,7 +87,7 @@
 	width: 2rem;
 	height: 2rem; /* Nice big tap target */
 	position: relative;
-	z-index: 2;
+	z-index: 3;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -102,7 +102,7 @@
 	height: 100%;
 	visibility: hidden;
 	opacity: 0;
-	z-index: 1;
+	z-index: 2;
 	background: var(--wp--preset--color--tertiary);
 	color: var(--wp--preset--color--background);
 	overflow-y: auto;
