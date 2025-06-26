@@ -1,0 +1,3 @@
+.faq {
+    min-width: var(--faq-min-width, 45ch);
+}

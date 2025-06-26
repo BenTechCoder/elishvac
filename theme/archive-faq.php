@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The template for displaying archive pages
+ * The template for displaying all FAQs
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -19,14 +19,17 @@ get_template_part("template-parts/components/hero", null, array(
 ?>
 
 <section class="wrapper">
-	<article class="stack text-left py-3xl">
+	<article class="center stack text-left py-3xl">
 
 		<?php if (have_posts()) : ?>
 
 		<?php
 			// Start the Loop.
 
-			
+			get_template_part("template-parts/components/faq/faq", 'query', array(
+				'faq_amount' => null,
+				'get_all_faqs' => true,
+			));
 
 		// Previous/next page navigation
 

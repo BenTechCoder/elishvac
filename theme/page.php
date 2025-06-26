@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -14,27 +15,26 @@
 get_header();
 ?>
 
-	<section id="primary">
-		<main id="main">
+<?php
+get_template_part("template-parts/components/hero", null, array(
+	"hero_text" => get_the_title(),
+	"hero_eyebrow" => ''
+));
+?>
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+<section class="py-xl-2xl sidebar wrapper" style="--sidebar-basis: 45ch;">
+	<article class="prose">
+		<?php the_content(); ?>
+	</article>
+	<div class="stack">
+		<?php
+		get_template_part("template-parts/components/faq/faq", 'query', array(
+			'faq_amount' => null,
+		));
+		?>
+	</div>
+</section>
 
-				get_template_part( 'template-parts/content/content', 'page' );
-
-				// If comments are open, or we have at least one comment, load
-				// the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
 
 <?php
 get_footer();
