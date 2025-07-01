@@ -17,9 +17,9 @@
                 while ($reviews_query->have_posts()) :
                     $reviews_query->the_post();
                     // Echo some markup
-                    $link = get_post_meta($post->ID, 'area_link');
+                    $link = get_post_permalink();
                 ?>
-                    <a href="<?php echo $link ?>" class="font-display">
+                    <a href="<?php echo $link ?>" class="font-display underline">
                         <?php echo get_the_title(); ?>
                     </a>
                 <?php

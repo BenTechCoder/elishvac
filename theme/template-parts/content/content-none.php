@@ -9,7 +9,7 @@
 
 ?>
 
-<section>
+<section class="py-xl">
 
 	<header class="page-header">
 		<?php if ( is_search() ) : ?>

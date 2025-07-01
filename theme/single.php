@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all single posts
  *
@@ -10,20 +11,24 @@
 get_header();
 ?>
 
-	<section id="primary">
-		<main id="main">
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-				get_template_part( 'template-parts/content/content', 'single' );
-				// End the loop.
-			endwhile;
-			?>
+<?php
+get_template_part("template-parts/components/hero", null, array(
+	"hero_text" => get_the_title(),
+	"hero_eyebrow" => str_replace("_", " ", get_post_type()),
+	"buttons" => false
+));
+?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+<section id="primary" class="py-2xl">
+
+	<article class="prose wrapper">
+		<?php
+		the_content()
+		?>
+	</article>
+
+</section><!-- #primary -->
 
 <?php
 get_footer();

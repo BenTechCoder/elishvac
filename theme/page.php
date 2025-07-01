@@ -18,7 +18,8 @@ get_header();
 <?php
 get_template_part("template-parts/components/hero", null, array(
 	"hero_text" => get_the_title(),
-	"hero_eyebrow" => ''
+	"hero_eyebrow" => '',
+	"buttons" => false
 ));
 ?>
 
@@ -34,7 +35,6 @@ get_template_part("template-parts/components/hero", null, array(
 		?>
 	</div>
 </section>
-
 
 <?php
 get_footer();

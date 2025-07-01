@@ -14,7 +14,8 @@ get_header();
 <?php
 get_template_part("template-parts/components/hero", null, array(
 	"hero_text" => get_post_type(),
-	"hero_eyebrow" => ''
+	"hero_eyebrow" => '',
+	"buttons" => false
 ));
 ?>
 

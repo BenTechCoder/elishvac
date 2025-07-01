@@ -2,8 +2,8 @@
     <div class="stack">
         <h2><?php echo strtoupper("Let's Clear the Air"); ?></h2>
         <div class="flex gap-s">
-            <a href="https://www.lebronconsulting.tech" class="btn outline-2 outline-secondary">Lebron Consulting</a>
-            <a href="https://www.lebronconsulting.tech" class="btn outline-2 outline-tertiary">Lebron Consulting</a>
+            <a href="/faq/" class="btn outline-2 outline-secondary">See all FAQs</a>
+            <a href="/services/" class="btn outline-2 outline-tertiary">See all Services</a>
         </div>
     </div>
     <div class="stack">

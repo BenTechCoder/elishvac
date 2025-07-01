@@ -14,7 +14,8 @@ get_header();
 <?php
 get_template_part("template-parts/components/hero", null, array(
     "hero_text" => get_the_title(),
-    "hero_eyebrow" => "Services"
+    "hero_eyebrow" => "Services",
+    "buttons" => false
 ));
 ?>
 <div class="md:bg-tertiary">

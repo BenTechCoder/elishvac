@@ -14,7 +14,19 @@ get_header();
 <?php
 get_template_part("template-parts/components/hero", null, array(
     "hero_text" => "Services",
-    "hero_eyebrow" => ""
+    "hero_eyebrow" => "",
+    "buttons" => array(
+                [
+                    'link' => '/contact/',
+                    'text' => 'Get a Quote',
+                    'color' => 'secondary',
+                ],
+                [
+                    'link' => '/service-areas/',
+                    'text' => 'See Service Area',
+                    'color' => 'primary',
+                ]
+            )
 ));
 ?>
 <div class="md:bg-tertiary">
