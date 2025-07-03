@@ -44,6 +44,60 @@
 .nav a:hover {
 	color: var(--wp--preset--color--secondary);
 }
+.has_sub_menu {
+	position: relative;
+}
+
+.has_sub_menu_icon {
+	transition: transform 0.5s ease-in-out;
+}
+
+.has_sub_menu:hover .has_sub_menu_icon {
+	transform: rotate(180deg);
+}
+
+.has_sub_menu:focus-within .has_sub_menu_icon {
+	transform: rotate(180deg);
+}
+
+.sub_menu {
+	font-size: var(--text-step--1);
+	background-color: var(--wp--preset--color--tertiary);
+	color: var(--wp--preset--color--background);
+	width: 100%;
+	padding: var(--spacing-xs);
+	border-radius: var(--radius-xs);
+	position: absolute;
+	/* Pull up to overlap the parent list item very slightly */
+	top: calc(100% - 0.25rem);
+	/* // Use the left from absolute position to shift the left side */
+	left: 50%;
+	/* Use translateX to shift the menu 50% of it's width back to the left */
+	transform: translateX(-50%);
+	transform: rotateX(-90deg) translateX(-50%);
+	transform-origin: top center;
+	opacity: 0.3;
+	transition: 280ms all 120ms ease-out;
+	z-index: 3;
+}
+
+.sub_menu li {
+	padding: var(--spacing-2xs);
+}
+
+.has_sub_menu:focus-within .sub_menu {
+	opacity: 1;
+	transform: rotateX(0) translateX(-50%);
+	visibility: visible;
+	/* position: static; */
+}
+
+.has_sub_menu:hover .sub_menu {
+	opacity: 1;
+	transform: rotateX(0) translateX(-50%);
+	visibility: visible;
+	/* position: static; */
+}
 
 .burger-menu__trigger {
 	display: none;
@@ -158,4 +212,18 @@
 	background: transparent;
 	border-color: transparent;
 	transform: rotate(180deg);
+}
+
+.burger-menu[enabled="true"][status="open"] .has_sub_menu:has(.has_sub_menu_icon):hover .sub_menu {
+	opacity: 1;
+	transform: rotateX(0) translateX(50%) translateY(10%);
+	visibility: visible;
+	position: static;
+}
+
+.burger-menu[enabled="true"][status="open"] .has_sub_menu:has(.has_sub_menu_icon):hover .sub_menu {
+	opacity: 1;
+	transform: rotateX(0) translateX(50%) translateY(10%);
+	visibility: visible;
+	position: static;
 }

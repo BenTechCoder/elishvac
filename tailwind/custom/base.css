@@ -97,8 +97,8 @@ blockquote :last-child {
 svg,
 .icon {
 	inline-size: auto;
-	height: 8ex;
-	width: 8ex;
+	height: var(--icon-size, 4ex);
+	width: var(--icon-size, 4ex);
 }
 
 strong {

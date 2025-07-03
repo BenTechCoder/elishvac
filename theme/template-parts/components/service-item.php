@@ -6,7 +6,7 @@
 
             <img src="<?php
                         echo esc_url(wp_get_attachment_url($args['icon']));
-                        ?>" alt="<?php echo $args['service_name']; ?> Icon" class="icon">
+                        ?>" alt="<?php echo $args['service_name']; ?> Icon" class="icon" style="--icon-size: 8ex;">
 
         <?php
         }
