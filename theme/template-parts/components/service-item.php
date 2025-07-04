@@ -11,6 +11,6 @@
         <?php
         }
         ?>
-        <h3 class="underline"><?php echo strtoupper($args['service_name']); ?></h3>
+        <h3 class="underline highlight"><?php echo strtoupper($args['service_name']); ?> <?php get_template_part("template-parts/components/highlight"); ?></h3>
     </a>
 </li>

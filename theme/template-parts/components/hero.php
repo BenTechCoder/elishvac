@@ -32,19 +32,19 @@ if ($args) {
 
 ?>
 
-<section class="hero stack wrapper py-xl">
+<section class="hero stack wrapper py-l intersect:motion-preset-fade">
     <div class="hero-text stack text-center mx-auto">
         <?php if (is_front_page()) {
 
         ?>
             <h1 class="eyebrow text-step-0 font-content mx-auto">HVAC Installation and Maintenance in North Carolina</h1>
-            <p class="header text-step-5 font-display"><span class="underline"><?php echo strtoupper("FULL-SERVICE"); ?></span> <?php echo strtoupper("HVAC FOR YOUR HOME AND BUSINESS"); ?></p>
+            <p class="header text-step-5 font-display"><span class="highlight"><?php echo strtoupper("FULL-SERVICE"); get_template_part("template-parts/components/highlight");?></span> <?php echo strtoupper("HVAC FOR YOUR HOME AND BUSINESS"); ?></p>
         <?php }
         if ($args) {
         ?>
 
             <p class="eyebrow text-step-0 font-content mx-auto"><?php echo strtoupper($hero_eyebrow) ?></p>
-            <h1 class="header text-step-5 font-display"><span class="underline"><?php echo strtoupper($hero_text); ?></span></h1>
+            <h1 class="header text-step-5 font-display highlight"><?php echo strtoupper($hero_text); ?><?php get_template_part("template-parts/components/highlight"); ?></h1>
         <?php } ?>
     </div>
     <div class="hero__buttons cluster justify-center">

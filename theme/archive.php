@@ -31,7 +31,7 @@ get_template_part("template-parts/components/hero", null, array(
 			<div class="p-l stack bg-tertiary items-start">
 				<div>
 					<p><?php echo $post_type ?></p>
-					<h2 class="underline"><?php echo get_the_title() ?></h2>
+					<h2 class="underline highlight"><?php echo get_the_title() ?><?php get_template_part("template-parts/components/highlight"); ?></h2>
 				</div>
 				<a href="<?php echo get_permalink() ?>" class="btn bg-secondary">See More</a>
 			</div>

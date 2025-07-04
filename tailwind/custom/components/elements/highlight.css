@@ -1,0 +1,30 @@
+.highlight svg {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	fill: var(--highlight-color, var(--color-secondary));
+	opacity: 0.9;
+	height: 30%;
+	width: 100%;
+	z-index: -1;
+	/* animation: growWidth 1s ease-in-out forwards; */
+	@apply intersect:motion-translate-y-in-100;
+}
+
+.highlight {
+	position: relative;
+	z-index: 0;
+}
+
+/* .highlight > :not(svg) {
+	
+} */
+
+@keyframes growWidth {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
