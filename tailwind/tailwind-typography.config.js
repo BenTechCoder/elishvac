@@ -3,6 +3,7 @@
  * configuration file like this one.
  */
 
+
 // Copied from Tailwind Typography.
 const hexToRgb = (hex) => {
 	if (typeof hex !== 'string' || hex.length === 0) {

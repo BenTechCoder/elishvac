@@ -1,14 +1,13 @@
 .btn {
 	@apply rounded-md;
 	padding: var(--spacing-xs);
-	/* transition-property: border;
-	transition-duration: 0.3s;
-	transition-timing-function: ease-in-out; */
 	cursor: pointer;
+	transition: background-color 0.5s ease-in-out;
 }
-/* Hover and focus values and animation to be seen at build */
-/* .btn:hover,
+
+.btn:hover,
 .btn:focus {
-	border-bottom: 4px solid var(--hover-color, theme(colors.dark));
-	border-right: 4px solid var(--hover-color, theme(colors.dark));
-} */
+	/* box-shadow: 0px 0px 20px var(--color-tertiary); /* shadow */
+	color: var(--hover-text-color, var(--color-background));
+	background-color: var(--hover-color, var(--color-tertiary));
+}

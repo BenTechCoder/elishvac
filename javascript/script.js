@@ -11,6 +11,7 @@
 
 import "@zachleat/details-utils";
 import BurgerMenu from './components/nav';
+import { Observer } from 'tailwindcss-intersect';
 
 if ('customElements' in window) {
 	customElements.define('burger-menu', BurgerMenu);
@@ -42,3 +43,5 @@ if ('customElements' in window) {
 		}
 	}
 })();
+
+Observer.start();

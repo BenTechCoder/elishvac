@@ -9,6 +9,8 @@
  * the default theme with new variables or overriding the values of existing
  * variables.
  */
+@plugin 'tailwindcss-motion';
+@plugin 'tailwindcss-intersect';
 @theme {
 	/**
 	 * These theme variables use CSS variables set by WordPress using values
