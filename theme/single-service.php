@@ -22,7 +22,7 @@ get_template_part("template-parts/components/hero", null, array(
     <section class="wrapper py-xl-2xl">
         <div class="sidebar bg-background md:p-s rounded-2xl" style="--sidebar-basis: 45ch;">
             <div class="stack" style="--space: var(--spacing-xl)">
-                <article class="prose"><?php the_content(); ?>
+                <article class="prose intersect:motion-preset-fade"><?php the_content(); ?>
                 </article>
                 <?php
                 if (!$post->post_parent) {

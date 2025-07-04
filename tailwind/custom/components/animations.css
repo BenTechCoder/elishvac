@@ -1,4 +1,0 @@
-section,
-article {
-	@apply intersect:motion-preset-fade;
-}

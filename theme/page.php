@@ -24,7 +24,7 @@ get_template_part("template-parts/components/hero", null, array(
 ?>
 
 <section class="py-xl-2xl sidebar wrapper" style="--sidebar-basis: 45ch;">
-	<article class="prose">
+	<article class="prose intersect:motion-preset-fade">
 		<?php the_content(); ?>
 	</article>
 	<div class="stack">

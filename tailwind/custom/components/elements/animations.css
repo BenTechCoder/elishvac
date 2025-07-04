@@ -1,0 +1,4 @@
+#primary * {
+	/* @apply intersect:motion-preset-fade; */
+	color: yellow !important;
+}
