@@ -600,13 +600,13 @@ footer {
   border-color: transparent;
   transform: rotate(180deg);
 }
-.burger-menu[enabled="true"][status="open"] .has_sub_menu:has(.has_sub_menu_icon):hover .sub_menu {
+.burger-menu[enabled="true"][status="open"]	.has_sub_menu:has(.has_sub_menu_icon):hover	.sub_menu {
   opacity: 1;
   transform: rotateX(0) translateX(50%) translateY(10%);
   visibility: visible;
   position: static;
 }
-.burger-menu[enabled="true"][status="open"] .has_sub_menu:has(.has_sub_menu_icon):hover .sub_menu {
+.burger-menu[enabled="true"][status="open"]	.has_sub_menu:has(.has_sub_menu_icon):hover	.sub_menu {
   opacity: 1;
   transform: rotateX(0) translateX(50%) translateY(10%);
   visibility: visible;
@@ -629,6 +629,10 @@ footer {
   background-image: var(--reviews-bg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.service__content {
+  position: sticky;
+  top: var(--spacing-l);
 }
 .center {
   box-sizing: content-box;

@@ -5,7 +5,7 @@ class Details_Walker_Nav_Menu extends Walker_Nav_Menu
     {
         $sub_menu_svg = '<svg width="800px" class="icon has_sub_menu_icon" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Arrow / Caret_Down_MD">
-<path id="Vector" d="M16 10L12 14L8 10" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector" d="M16 10L12 14L8 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>';
         $has_children = in_array('menu-item-has-children', (array) $item->classes);
