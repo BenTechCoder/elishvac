@@ -16,6 +16,11 @@
 	z-index: 0;
 }
 
+.highlight:hover svg,
+.highlight:focus svg {
+	opacity: 0.5;
+}
+
 /* .highlight > :not(svg) {
 	
 } */

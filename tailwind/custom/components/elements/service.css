@@ -1,0 +1,4 @@
+.service__content {
+    position: sticky;
+    top: var(--spacing-l);
+}

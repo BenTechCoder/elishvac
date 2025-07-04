@@ -28,7 +28,7 @@ get_template_part("template-parts/components/hero", null, array(
 			<?php
 			// Start the Loop.
 			?>
-			<div class="p-l stack bg-tertiary items-start">
+			<div class="p-l stack bg-tertiary items-start intersect-once intersect:motion-translate-y-in-100">
 				<div>
 					<p><?php echo $post_type ?></p>
 					<h2 class="underline highlight"><?php echo get_the_title() ?><?php get_template_part("template-parts/components/highlight"); ?></h2>

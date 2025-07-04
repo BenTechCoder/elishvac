@@ -18,20 +18,22 @@ get_template_part("template-parts/components/hero", null, array(
     "buttons" => false
 ));
 ?>
-<div class="md:bg-tertiary">
+<div class="service md:bg-tertiary">
     <section class="wrapper py-xl-2xl">
-        <div class="sidebar bg-background md:p-s rounded-2xl" style="--sidebar-basis: 45ch;">
-            <div class="stack" style="--space: var(--spacing-xl)">
-                <article class="prose intersect:motion-preset-fade"><?php the_content(); ?>
-                </article>
-                <?php
-                if (!$post->post_parent) {
-                    get_template_part("template-parts/components/services-grid", null, array(
-                        "depth" => "sub_page"
-                    ));
-                }
-                ?>
-            </div>
+        <div class="sidebar bg-background md:p-s rounded-2xl " style="--sidebar-basis: 45ch;">
+           <div>
+                <div class="stack service__content" style="--space: var(--spacing-xl)">
+                    <article class="prose intersect:motion-preset-fade"><?php the_content(); ?>
+                    </article>
+                    <?php
+                    if (!$post->post_parent) {
+                        get_template_part("template-parts/components/services-grid", null, array(
+                            "depth" => "sub_page"
+                        ));
+                    }
+                    ?>
+                </div>
+           </div>
             <div class="stack">
                 <?php
                 get_template_part("template-parts/components/faq/faq", 'query', array(

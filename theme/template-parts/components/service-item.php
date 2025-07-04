@@ -1,4 +1,4 @@
-<li class="service__item card stack justify-center">
+<li class="service__item card stack justify-center intersect-once intersect:motion-translate-y-in-100">
     <a href="<?php echo get_permalink(); ?>" class="center text-center">
         <?php
         if ($args['icon']) {
