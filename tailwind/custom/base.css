@@ -139,12 +139,6 @@ main:focus {
 	outline: none;
 }
 
-/* Base selection styles that invert whatever colours are rendered */
-::selection {
-	background-color: var(--color-text);
-	color: var(--color-bg);
-}
-
 .preload-transitions * {
 	transition: none !important;
 }
