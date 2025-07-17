@@ -13,6 +13,7 @@
  */
 
 get_header();
+$has_faq = pods('page', get_the_ID())->field("page_faqs.ID");
 ?>
 
 <?php
@@ -23,18 +24,20 @@ get_template_part("template-parts/components/hero", null, array(
 ));
 ?>
 
-<section class="py-xl-2xl sidebar wrapper" style="--sidebar-basis: 45ch;">
+<section class="py-xl-2xl <?php echo ($has_faq) ? 'sidebar':''?> wrapper" <?php echo ($has_faq) ? 'style="--sidebar-basis: 45ch;"': '' ?>>
 	<article class="prose intersect-once intersect:motion-preset-fade-lg">
 		<?php the_content(); ?>
 	</article>
-	<div class="stack">
-		<?php
-		get_template_part("template-parts/components/faq/faq", 'query', array(
-			'faq_amount' => null,
-		));
-		?>
-	</div>
-</section>
+	<?php if ($has_faq) { ?>
+		<div class="stack">
+			<?php
+			get_template_part("template-parts/components/faq/faq", 'query', array(
+				'faq_amount' => null,
+			));
+			?>
+		</div>
+	<?php }; ?>
 
+</section>
 <?php
 get_footer();
