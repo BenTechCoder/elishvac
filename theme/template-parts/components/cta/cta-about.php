@@ -10,8 +10,8 @@
             </ul>
             <p>With over 15 years of experience, we’re committed to providing top-quality heating and cooling services across the state. Whether you need a new AC unit or furnace repair, we’ve got North Carolina covered.</p>
             <div class="flex gap-s lg:justify-center">
-                <a href="https://www.lebronconsulting.tech" class="btn outline-2 outline-primary">Lebron Consulting</a>
-                <a href="https://www.lebronconsulting.tech" class="btn bg-foreground text-background">Lebron Consulting</a>
+                <a href="/service-area" class="btn outline-2 outline-secondary">Service Area</a>
+                <a href="/about" class="btn btn outline-2 outline-primary">About us</a>
             </div>
         </article>
     </div>

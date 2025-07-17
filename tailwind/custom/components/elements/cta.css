@@ -2,3 +2,7 @@
 	object-fit: cover;
 	border-radius: 10% 0% 10% 0%;
 }
+
+.cta-about__content ul li::before{
+	content: "✅";
+}
