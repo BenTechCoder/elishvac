@@ -50,7 +50,7 @@ get_template_part("template-parts/components/hero", null, array(
             ?>
                 <section class="switcher py-xl-2xl" style="--space: var(--spacing-xl)">
 
-                    <article class="prose intersect:motion-preset-fade">
+                    <article class="prose intersect-once intersect:motion-preset-fade-lg">
                         <h2><a href="<?php echo get_the_permalink() ?>"><?php echo get_the_title(); ?></a></h2>
                         <?php
                         the_content();

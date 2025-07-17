@@ -24,7 +24,7 @@
 
 	<?php _tw_post_thumbnail(); ?>
 
-	<div class="wrapper prose intersect:motion-preset-fade">
+	<div class="wrapper prose intersect-once intersect:motion-preset-fade-lg">
 		<?php
 		the_content();
 

@@ -1,4 +1,4 @@
-<ul class="grid intersect:motion-preset-fade">
+<ul class="grid intersect-once intersect:motion-preset-fade-lg">
     <?php
     $grid_level = 0;
     $grid_amount = 4;

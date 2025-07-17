@@ -1,4 +1,4 @@
-<section class="py-xl center stack text-center intersect:motion-preset-fade">
+<section class="py-xl center stack text-center intersect-once intersect:motion-preset-fade-lg">
     <h2><?php echo strtoupper("Affordable, Quality, Solutions"); ?></h2>
     <p>Partnering with the industry’s best brands to bring North Carolina top-tier heating and cooling solutions.</p>
     <div class="cluster justify-center" style="--space: var(--spacing-xl);">

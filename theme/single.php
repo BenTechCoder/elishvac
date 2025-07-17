@@ -22,7 +22,7 @@ get_template_part("template-parts/components/hero", null, array(
 
 <section id="primary" class="py-2xl">
 
-	<article class="prose intersect:motion-preset-fade wrapper">
+	<article class="prose intersect-once intersect:motion-preset-fade-lg wrapper">
 		<?php
 		the_content()
 		?>

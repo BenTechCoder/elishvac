@@ -32,13 +32,14 @@ if ($args) {
 
 ?>
 
-<section class="hero stack wrapper py-l intersect:motion-preset-fade">
+<section class="hero stack wrapper py-l intersect-once intersect:motion-preset-fade-lg">
     <div class="hero-text stack text-center mx-auto">
         <?php if (is_front_page()) {
 
         ?>
             <h1 class="eyebrow text-step-0 font-content mx-auto">HVAC Installation and Maintenance in North Carolina</h1>
-            <p class="header text-step-5 font-display"><span class="highlight"><?php echo strtoupper("FULL-SERVICE"); get_template_part("template-parts/components/highlight");?></span> <?php echo strtoupper("HVAC FOR YOUR HOME AND BUSINESS"); ?></p>
+            <p class="header text-step-5 font-display"><span class="highlight"><?php echo strtoupper("FULL-SERVICE");
+                                                                                get_template_part("template-parts/components/highlight"); ?></span> <?php echo strtoupper("HVAC FOR YOUR HOME AND BUSINESS"); ?></p>
         <?php }
         if ($args) {
         ?>
