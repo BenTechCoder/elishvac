@@ -34,7 +34,7 @@
         <ul class="reel">
             <?php
             $args = array(
-                'post_type'  => 'review',
+                'post_type'  => 'reviews',
                 'posts_per_page' => 6,
                 // Several more arguments could go here. Last one without a comma.
             );
