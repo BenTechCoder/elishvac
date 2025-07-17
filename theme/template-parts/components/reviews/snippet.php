@@ -5,7 +5,7 @@
             <ul class="cluster">
                 <?php
                 $args = array(
-                    'post_type'  => 'service_areas',
+                    'post_type'  => 'service_area',
                     'posts_per_page' => 6,
                     // Several more arguments could go here. Last one without a comma.
                 );
