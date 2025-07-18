@@ -298,3 +298,10 @@ add_theme_support('custom-logo');
 // Custom Nav Walker
 
 require get_template_directory() . '/inc/details-walker.php';
+
+add_filter('the_title', 'encode_post_titles', 10, 2);
+
+function encode_post_titles($title)
+{
+	return str_replace("\xc2\xa0", ' ', $title);
+}
