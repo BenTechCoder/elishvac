@@ -28,7 +28,7 @@ get_template_part("template-parts/components/hero", null, array(
 			// Start the Loop.
 
 			get_template_part("template-parts/components/faq/faq", 'query', array(
-				'faq_amount' => null,
+				'faq_amount' => -1,
 				'get_all_faqs' => true,
 			));
 
