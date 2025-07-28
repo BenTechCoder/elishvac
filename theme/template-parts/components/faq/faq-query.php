@@ -33,7 +33,7 @@ while ($faq_query->have_posts()) :
     $faq_query->the_post();
 ?>
     <details-utils animate>
-        <details class="faq bg-tertiary text-background p-m rounded-sm">
+        <details class="faq bg-tertiary text-background p-m rounded-sm intersect-once intersect:motion-translate-y-in-100">
             <summary><?php echo get_the_title(); ?></summary>
             <div class="py-s">
                 <p><?php echo get_the_content(); ?></p>
