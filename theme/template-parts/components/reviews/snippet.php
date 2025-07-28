@@ -19,9 +19,11 @@
                     // Echo some markup
                     $link = get_post_permalink();
                 ?>
-                    <a href="<?php echo $link ?>" class="font-display underline">
-                        <?php echo get_the_title(); ?>
-                    </a>
+                    <li>
+                        <a href="<?php echo $link ?>" class="font-display underline">
+                            <?php echo get_the_title(); ?>
+                        </a>
+                    </li>
                 <?php
                 endwhile;
 
